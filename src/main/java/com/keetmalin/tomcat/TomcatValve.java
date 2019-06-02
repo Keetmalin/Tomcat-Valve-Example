@@ -15,8 +15,8 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * @author Keet Sugathadasa
  */
-public class ProcessingValve extends ValveBase {
-    private static final Logger logger = Logger.getLogger(ProcessingValve.class.getName());
+public class TomcatValve extends ValveBase {
+    private static final Logger logger = Logger.getLogger(TomcatValve.class.getName());
 
     public void invoke(Request request, Response response) throws IOException, ServletException {
         HttpServletRequest httpServletRequest = request.getRequest();
